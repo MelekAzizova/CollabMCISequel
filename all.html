@@ -1,143 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Submit</title>
-    <link rel="stylesheet" href="all.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="nav">
-          <div>
-            <h1>FILMCI</h1>
-          </div>
-          <div class="nav-menu">
-            <ul>
-              <li><a href="all.html">SHOW</a></li>
-              <li><a href="all.html">PEOPLE</a></li>
-              <li><a href="all.html">NETWORKS</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <div class="container filter">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="title">Filters</title>
+  <link rel="stylesheet" href="assets/css/all.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav">
         <div>
-          <h1>Show Type:</h1>
-          <select name="showType" id="showType">
-            <option value="animation">Animation</option>
-            <option value="talkshow">Talk Show</option>
-            <option value="anews">News</option>
-          </select>
+          <h1>FILMCI</h1>
         </div>
-        <div>
-          <h1>Language:</h1>
-          <select name="language" id="languagee">
-            <option value="azerbaijani">Azerbaijani</option>
-            <option value="english">English</option>
-            <option value="russian">Russian</option>
-          </select>
-        </div>
-        <div>
-          <h1>Genre:</h1>
-          <select name="genre" id="genre">
-            <option value="action">Action</option>
-            <option value="anime">Anime</option>
-            <option value="children">Children</option>
-            <option value="crime">Crime</option>
-            <option value="drama">Drama</option>
-          </select>
-        </div>
-        <div>
-          <h1>Rating:</h1>
-          <select name="rating" id="rating">
-            <option value="volvo">2+</option>
-            <option value="saab">3+</option>
-            <option value="opel">4+</option>
-            <option value="audi">5+</option>
-            <option value="saab">6+</option>
-            <option value="opel">7+</option>
-            <option value="audi">8+</option>
-            <option value="saab">9+</option>
-          </select>
-        </div>
-        <button style="background-color: red" type="submit">
-          <a style="color: white" href="all.html">Submit</a>
-        </button>
-      </div>
-      <div>
-        <div class="container film__card">
+        <div class="nav-menu">
           <ul>
-            <li>
-              <a href="film.html"
-                ><div class="film__img">
-                  <img src="poster.jpg" alt="" />
-                  <p>NAME</p>
-                </div></a
-              >
-            </li>
-            <li>
-              <a href="film.html"
-                ><div class="film__img">
-                  <img src="poster.jpg" alt="" />
-                  <p>NAME</p>
-                </div></a
-              >
-            </li>
-            <li>
-              <a href="film.html"
-                ><div class="film__img">
-                  <img src="poster.jpg" alt="" />
-                  <p>NAME</p>
-                </div></a
-              >
-            </li>
-            <li>
-              <a href="film.html"
-                ><div class="film__img">
-                  <img src="poster.jpg" alt="" />
-                  <p>NAME</p>
-                </div></a
-              >
-            </li>
-            <li>
-              <a href="film.html"
-                ><div class="film__img">
-                  <img src="poster.jpg" alt="" />
-                  <p>NAME</p>
-                </div></a
-              >
-            </li>
-            <li>
-              <a href="film.html"
-                ><div class="film__img">
-                  <img src="poster.jpg" alt="" />
-                  <p>NAME</p>
-                </div></a
-              >
-            </li>
-            <li>
-              <a href="film.html"
-                ><div class="film__img">
-                  <img src="poster.jpg" alt="" />
-                  <p>NAME</p>
-                </div></a
-              >
-            </li>
-            <li>
-              <a href="film.html"
-                ><div class="film__img">
-                  <img src="poster.jpg" alt="" />
-                  <p>NAME</p>
-                </div></a
-              >
-            </li>
+            <li><a href="all.html">SHOW</a></li>
           </ul>
         </div>
       </div>
-    </main>
-  </body>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="container">
+
+      <form class="filter" id="filter1">
+        <div>
+        <h1>Show Type:</h1>
+        <select name="showType" id="showType">
+          <option value="Animation">Animation</option>
+          <option value="Talkshow">Talk Show</option>
+          <option value="News">News</option>
+        </select>
+      </div>
+      <div>
+        <h1>Language:</h1>
+        <select name="language" id="languagee">
+          <option value="English">English</option>
+          <option value="Russian">Russian</option>
+        </select>
+      </div>
+      <div>
+        <h1>Genre:</h1>
+        <select name="genre" id="genre">
+          <option value="Action">Action</option>
+          <option value="Anime">Anime</option>
+          <option value="Children">Children</option>
+          <option value="Crime">Crime</option>
+          <option value="Drama">Drama</option>
+        </select>
+      </div>
+      <div>
+        <h1>Rating:</h1>
+        <select name="rating" id="rating">
+          <option value="2">2+</option>
+          <option value="3">3+</option>
+          <option value="4">4+</option>
+          <option value="5">5+</option>
+          <option value="6">6+</option>
+          <option value="7">7+</option>
+          <option value="8">8+</option>
+          <option value="9">9+</option>
+        </select>
+      </div>
+      <div>
+        <button value="Submit" style="background-color: red; color: white;" type="submit">Submit</button>
+      </div>
+        
+      </form>
+
+    </div>
+
+    <div>
+      <div class="container film__card">
+        <ul id="putter1">
+
+        </ul>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>

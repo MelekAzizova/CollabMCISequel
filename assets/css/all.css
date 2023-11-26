@@ -1,0 +1,111 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  border: none;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  /* border: 1px solid red; */
+}
+html {
+  font-size: 62.5%;
+}
+section {
+  padding: 6rem 0;
+}
+.container {
+  width: 82%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+/* -----starting header----- */
+body {
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 40%) 0,
+        rgba(0, 0, 0, 40%) 60%,
+        rgba(0, 0, 0, 0.936) 100%
+      ),
+      url(../img/backgroundpic.jpg);
+}
+main{
+    min-height: 100vh;
+}
+nav,
+nav a {
+    color: rgba(255, 255, 255, 0.767);
+    font-size: 1.5rem;
+    transition: 0.25s;
+  }
+  nav a:hover {
+    color: bisque;
+    font-size: 3rem;
+  }
+.nav {
+  height: 12vh;
+  width: 82%;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-menu {
+  width: 30%;
+}
+.nav-menu ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ---------- */
+
+.film__card ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.film__card li {
+    border-radius: 1.3rem;
+  background-color: rgba(255, 255, 255, 0.123);
+  text-align: center;
+  margin: 2rem 0;
+  gap: 2rem;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  width: 24%;
+}
+.film__img p{
+    padding: 1rem 2rem;
+    text-shadow: 1px 1px 30px black;
+    color: white;
+    margin: 1rem;
+    font-size: 2rem;
+}
+img {
+    margin:2rem 0 0 0;
+  border-radius: 1.3rem;
+  width: 80%;
+  height: 80%;
+}
+.filter{
+  display: flex;
+   color: white;
+  justify-content: space-between;
+}
+.filter div{
+  display: flex;
+}
+.filter select{
+  margin-left: 1rem;
+  padding: 0.5rem 2rem;
+  background-color: rgba(65, 65, 65, 0.342);
+  border: 2px solid black;
+  color: white;
+}
+.filter button{
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+}
