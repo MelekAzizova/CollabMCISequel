@@ -11,15 +11,6 @@
 html {
   font-size: 62.5%;
 }
-section {
-  padding: 6rem 0;
-}
-.container {
-  width: 82%;
-  margin: 0 auto;
-  margin-top: 3rem;
-}
-/* -----starting header----- */
 body {
     background-image: linear-gradient(
         to top,
@@ -28,22 +19,14 @@ body {
         rgba(0, 0, 0, 0.936) 100%
       ),
       url(../img/backgroundpic.jpg);
+      min-height: 100vh;
 }
-main{
-    min-height: 100vh;
-}
-nav,
-nav a {
+nav{
     color: rgba(255, 255, 255, 0.767);
     font-size: 1.5rem;
-    transition: 0.25s;
-  }
-  nav a:hover {
-    color: bisque;
-    font-size: 3rem;
   }
 .nav {
-  height: 12vh;
+  height: 13vh;
   width: 82%;
   margin: 0 auto;
   align-items: center;
@@ -58,9 +41,11 @@ nav a {
   display: flex;
   justify-content: space-between;
 }
-
-/* ---------- */
-
+.container {
+  width: 82%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
 .film__card ul {
   display: flex;
   flex-wrap: wrap;
@@ -90,22 +75,27 @@ img {
   width: 80%;
   height: 80%;
 }
-.filter{
+ .filter{
   display: flex;
    color: white;
   justify-content: space-between;
 }
 .filter div{
+  
   display: flex;
+} 
+.filter h1{
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.767);
 }
 .filter select{
-  margin-left: 1rem;
-  padding: 0.5rem 2rem;
+  margin: 0 1rem;
+  padding: 0.5rem;
   background-color: rgba(65, 65, 65, 0.342);
-  border: 2px solid black;
-  color: white;
+  border: 1px solid black;
+color: white;
 }
 .filter button{
   padding: 0.5rem 2rem;
   border-radius: 1rem;
-}
+}  
